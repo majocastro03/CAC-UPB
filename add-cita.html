@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="icon" href="LogoFixed.png">
+    <title>Agendar cita</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="LogoFixed.png" alt="Logo" height="70" width="70"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index-cita.html">Agendar Cita</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h3 style="text-align: center">Registro de Cita</h3>
+        <form action="add-cita.html" method="post" class="row g-3">
+            <div class="col-md-4">
+              <label for="identificacion" class="form-label">Identificación</label>
+              <input type="text" class="form-control" id="identificacion" required>
+            </div>
+            <div class="col-md-4">
+              <label for="nombres" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="nombres" required>
+            </div>
+            <div class="col-md-4">
+              <label for="apellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" required>
+            </div>
+
+            <div class="col-md-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" required>
+            </div>
+            <div class="col-md-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <input type="text" class="form-control" id="descripcion" required>
+              </div>
+            <div class="col-md-3">
+                <label for="tipo" class="form-label">Tipo de solicitud</label>
+                <select class="form-select" id="tipo" required>
+                  <option selected disabled value="">Seleccione</option>
+                  <option>Atencion al cliente</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fecha" required>
+              </div>
+              <div class="col-md-3">
+                <label for="hora" class="form-label">Hora </label>
+                <input type="time" class="form-control" id="hora" name="hora" required>
+              </div>
+              <div class="col-md-3">
+                <label for="lugar" class="form-label">Lugar </label>
+                <input type="text" class="form-control" id="lugar" name="lugar" required>
+              </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Acepto términos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Registrar Cita</button>
+            </div>
+          </form>
+</body>
+</html>

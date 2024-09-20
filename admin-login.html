@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        .div-login{
+      margin: 10px auto;
+      width: 50%;
+    }
+      </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css" />
+        <link rel="icon" href="LogoFixed.png">
+        <title>Administrador</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="LogoFixed.png" alt="Logo" height="70" width="70"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index-cita.html">Agendar Cita</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <h3 style="text-align: center">Inicio de Sesión del Administrador</h3>
+
+        <form action="admin-login.html" method="post">
+                    <div class="div-login" >
+            <div class="mb-3">
+                <label for="username" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="username"></input>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password"></input>
+    </div>
+
+                <input class="btn btn-primary" type="submit" value="Ingresar">
+            </input>
+
+            <div class="footer">
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </div>
+    </div>
+        </form>
+
+
+</html>
