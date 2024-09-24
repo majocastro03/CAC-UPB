@@ -1,16 +1,34 @@
-export class Ticket{
+// src/domain/entities/Ticket.ts
+
+export class Ticket {
+    public id: number;
+    public num: string;
+    public generationDate: Date;
+    public generationTime: string;
+    public state: 'activo' | 'vencido';
+    public clientId: number;
+
     constructor(
-        public id: string,
-        public userid: string,
-        public appointmentid: string,
-        public time: Date,
-        public isPriority: boolean,
-        public status: 'active' | 'expired' | 'completed'
-    ){}
-    expireTicket(){
-        this.status = 'expired';
+        id: number,
+        num: string,
+        generationDate: Date,
+        generationTime: string,
+        state: 'activo' | 'vencido',
+        clientId: number
+    ) {
+        this.id = id;
+        this.num = num;
+        this.generationDate = generationDate;
+        this.generationTime = generationTime;
+        this.state = state;
+        this.clientId = clientId;
     }
-    completeTicket(){
-        this.status = 'completed';
+
+    public markAsExpired(): void {
+        this.state = 'vencido';
+    }
+
+    public isActive(): boolean {
+        return this.state === 'activo';
     }
 }
